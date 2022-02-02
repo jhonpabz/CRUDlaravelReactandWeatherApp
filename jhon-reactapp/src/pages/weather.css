@@ -1,0 +1,391 @@
+.Weather {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-size: cover; 
+    background-position: center center;
+    color: #ffffff;
+    transition: 1s;
+}
+
+.search-input {
+    position: absolute;
+    right: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    top: 610px;
+    border-top: 1px solid rgba(255,255,255, 0.5);
+    border-left: 1px solid rgba(255,255,255, 0.5);
+    background: rgba(255,255,255, 0.3);
+    backdrop-filter: blur(1px);
+    overflow: hidden;
+    padding: 3px;
+    border-radius: 15px;
+}
+
+.search-input > input {
+    font-size: 25px;
+    width: 395px;
+    font-size: 40px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    background: transparent;
+}
+.search-input > input::placeholder {
+    color: white;
+}
+
+.search-button {
+    cursor: pointer;
+    transform: scale(2.3);
+    margin-right: 15px;
+    transition: .2s;
+}
+.search-button:hover {
+    transform: scale(2.6);
+    transition: .5s;
+}
+
+
+.weather-container > h2 {
+    position: absolute;
+    font-size: 64px;
+    left: 73px;
+    top: 620px;
+}
+
+.top-part {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    left: 73px;
+    top: 420px;
+}
+
+.top-part >h1 {
+    font-size: 180px;
+}
+.condition-high-low {
+    margin-left: 20px;
+}
+
+.condition-high-low > h1:nth-of-type(1){
+    font-size: 64px;
+}
+.condition-high-low > h1:nth-of-type(2),
+h1:nth-of-type(3){
+    font-size: 36px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .weather-container > h2 {
+        position: absolute;
+        font-size: 34px;
+        /* left: 0px; */
+        top: 270px;
+        text-align: center;
+    }
+
+    .weather-container-2 > h1 {
+        position: absolute;
+        font-size: 34px;
+        /* left: 0px; */
+        top: 220px;
+        text-align: center;
+    }
+
+    .top-part {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        /* left: 0px; */
+        top: 120px;
+        
+    }
+    .top-part >h1 {
+        font-size: 80px;
+    }
+    .condition-high-low {
+        margin-left: 20px;
+    }
+    
+    .condition-high-low > h1:nth-of-type(1){
+        font-size: 34px;
+    }
+    .condition-high-low > h1:nth-of-type(2),
+    h1:nth-of-type(3){
+        font-size: 16px;
+    }
+
+    .search-input {
+        right: 0px;
+        position: absolute;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        top: 10px;
+        border-top: 1px solid rgba(255,255,255, 0.5);
+        border-left: 1px solid rgba(255,255,255, 0.5);
+        background: rgba(255,255,255, 0.3);
+        backdrop-filter: blur(1px);
+        overflow: hidden;
+        padding: 3px;
+        border-radius: 15px;
+        width: 100%;
+        
+    }
+
+    .search-input > input {
+        font-size: 25px;
+        width: 100%;
+        font-size: 20px;
+        padding: 5px;
+        border: none;
+        outline: none;
+        color: white;
+        background: transparent;
+    }
+    .search-input > input::placeholder {
+        color: white;
+    }
+    
+    .search-button {
+        cursor: pointer;
+        transform: scale(2.3);
+        /* margin-right: 15px; */
+        transition: .2s;
+    }
+    .search-button:hover {
+        transform: scale(2.6);
+        transition: .5s;
+    }
+
+    .search-container {
+        padding: 10px;
+    }
+    
+  }
+
+
+  @media only screen and (max-width: 1400px) and (min-width: 951px)  {
+
+    .search-input {
+        right: 50px;
+        top: 610px;
+        padding: 3px;
+    }
+    
+    .search-input > input {
+        font-size: 25px;
+        width: 340px;
+        font-size: 30px;
+        padding: 2px;
+    }
+    .search-input > input::placeholder {
+        color: white;
+    }
+    
+    .search-button {
+        cursor: pointer;
+        transform: scale(2);
+        margin-right: 12px;
+        transition: .2s;
+    }
+    .search-button:hover {
+        transform: scale(2.3);
+        transition: .5s;
+    }
+    
+    .weather-container > h2 {
+        position: absolute;
+        font-size: 44px;
+        left: 50px;
+        top: 620px;
+    }
+    
+    .top-part {
+        left: 50px;
+        top: 470px;
+    }
+    
+    .top-part >h1 {
+        font-size: 130px;
+    }
+    .condition-high-low {
+        margin-left: 10px;
+    }
+    
+    .condition-high-low > h1:nth-of-type(1){
+        font-size: 40px;
+    }
+    .condition-high-low > h1:nth-of-type(2),
+    h1:nth-of-type(3){
+        font-size: 20px;
+    }
+
+  }
+
+
+
+
+  @media only screen and (max-width: 950px) and (min-width: 601px)  {
+
+    .search-input {
+        right: 30px;
+        top: 610px;
+        padding: 3px;
+    }
+    
+    .search-input > input {
+        font-size: 25px;
+        width: 240px;
+        font-size: 25px;
+        padding: 2px;
+    }
+    .search-input > input::placeholder {
+        color: white;
+    }
+    
+    .search-button {
+        cursor: pointer;
+        transform: scale(2);
+        margin-right: 12px;
+        transition: .2s;
+    }
+    .search-button:hover {
+        transform: scale(2.3);
+        transition: .5s;
+    }
+    
+    .weather-container > h2 {
+        position: absolute;
+        font-size: 44px;
+        left: 30px;
+        top: 610px;
+    }
+    
+    .top-part {
+        left: 30px;
+        top: 490px;
+    }
+    
+    .top-part >h1 {
+        font-size: 100px;
+    }
+    .condition-high-low {
+        margin-left: 10px;
+    }
+    
+    .condition-high-low > h1:nth-of-type(1){
+        font-size: 30px;
+    }
+    .condition-high-low > h1:nth-of-type(2),
+    h1:nth-of-type(3){
+        font-size: 15px;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 760px) and (min-width: 601px)  {
+    .weather-container {
+        /* position: absolute; */
+        
+    }
+    .weather-container > h2 {
+        position: absolute;
+        font-size: 44px;
+        /* left: 0px; */
+        top: 270px;
+        text-align: center;
+    }
+
+    .top-part {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        /* left: 0px; */
+        top: 120px;
+        
+    }
+    .top-part >h1 {
+        font-size: 100px;
+    }
+    .condition-high-low {
+        margin-left: 20px;
+    }
+    
+    .condition-high-low > h1:nth-of-type(1){
+        font-size: 34px;
+    }
+    .condition-high-low > h1:nth-of-type(2),
+    h1:nth-of-type(3){
+        font-size: 16px;
+    }
+
+    .search-input {
+        right: 0px;
+        position: absolute;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        top: 10px;
+        border-top: 1px solid rgba(255,255,255, 0.5);
+        border-left: 1px solid rgba(255,255,255, 0.5);
+        background: rgba(255,255,255, 0.3);
+        backdrop-filter: blur(1px);
+        overflow: hidden;
+        padding: 3px;
+        border-radius: 15px;
+        width: 100%;
+        
+    }
+
+    .search-input > input {
+        font-size: 25px;
+        width: 100%;
+        font-size: 20px;
+        padding: 5px;
+        border: none;
+        outline: none;
+        color: white;
+        background: transparent;
+    }
+    .search-input > input::placeholder {
+        color: white;
+    }
+    
+    .search-button {
+        cursor: pointer;
+        transform: scale(2.3);
+        /* margin-right: 15px; */
+        transition: .2s;
+    }
+    .search-button:hover {
+        transform: scale(2.6);
+        transition: .5s;
+    }
+
+    .search-container {
+        padding: 10px;
+    }
+
+  }
